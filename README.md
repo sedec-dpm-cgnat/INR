@@ -19,8 +19,10 @@ Os arquivos-fonte de montagem e os geradores estão em `docs/inr/`.
 
 ```powershell
 python docs/inr/assemble.py
+Copy-Item docs/inr/inr.html index.html
 python docs/inr/make_pdf.py
 python docs/inr/make_docs.py
+Copy-Item docs/inr/INR_Fase1_Documento_Executivo_formatado.docx INR_Fase1_Documento_Executivo.docx
 ```
 
 O PDF preserva a formatação visual do HTML. O Word é gerado como arquivo editável
